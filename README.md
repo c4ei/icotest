@@ -31,12 +31,12 @@ https://cryptoicoapp.netlify.app/
 
 ## Smart Contracts deployed on Goerli Testnet
 
-- Staking Token (STKN) - https://goerli.etherscan.io/token/0x569eb2a0f04a7134788d7c02b6b804d9b1d82d09
+- C4EI ETH (STKN) - https://goerli.etherscan.io/token/0xA535eb8C8E0DdeF9Bc19fbE3614c44211D8142d8
 
-- ICO - https://goerli.etherscan.io/address/0x8f0680d7aa5a919eefcae59f79956495427217cc
+- ICO - https://goerli.etherscan.io/address/0x41b02ED26Da14a3CC790B861174Dd4AD02213790
 
 ## Smart Contracts Genesis Transaction - Goerli Testnet
 
-- Staking Token (STKN) - https://goerli.etherscan.io/tx/0x4303e7e6a9be08df9c7bad58d25621435bb6d47b47de3e08ef913f2eb8f9b7a6
+- C4EI ETH (STKN) - https://goerli.etherscan.io/tx/0x4303e7e6a9be08df9c7bad58d25621435bb6d47b47de3e08ef913f2eb8f9b7a6
 
 - ICO - https://goerli.etherscan.io/tx/0xaf5eb9dfe2d1217f3aade29a2972244ebe15572bd0e73595e8a1be1178af25d2

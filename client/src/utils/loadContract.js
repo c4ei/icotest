@@ -3,30 +3,30 @@ import { stakingICOAddress, stakingICOAbi } from "./constants";
 import { toast } from "react-toastify";
 
 async function loadContract(signer, chainId, setContract, address) {
-  if (chainId !== 5) {
+  if (chainId !== 5 && chainId !== 21004) {
     toast.error(
-      "Please Change your network to Goerli Network for Buying Tokens"
+      "Please Change your network to Goerli or C4EI Network for Buying Tokens"
     );
     return;
   }
-  const _stknICOContract = new ethers.Contract(
+  const _ec4eiICOContract = new ethers.Contract(
     stakingICOAddress,
     stakingICOAbi,
     signer
   );
 
   setContract({
-    stknICO: _stknICOContract,
+    ec4eiICO: _ec4eiICOContract,
   });
 
   //Read From Contract
 
   const tokensAvailable = ethers.utils.formatEther(
-    await _stknICOContract.getICOTokenBalance()
+    await _ec4eiICOContract.getICOTokenBalance()
   );
 
   const investorBalance = ethers.utils.formatEther(
-    await _stknICOContract.investorBalanceOf(address)
+    await _ec4eiICOContract.investorBalanceOf(address)
   );
 
   return {

@@ -21,7 +21,7 @@ const TokenScreen = () => {
     }
 
     try {
-      const tx = await contract.stknICO.invest({
+      const tx = await contract.ec4eiICO.invest({
         value: ethers.utils.parseEther((0.0001 * userAmount).toString()),
       });
       setUserAmount("");
@@ -45,7 +45,7 @@ const TokenScreen = () => {
       );
       handleConnectWallet();
     } catch (error) {
-      handleError(error, "STKN");
+      handleError(error, "EC4EI");
     }
   };
   return (
@@ -57,15 +57,15 @@ const TokenScreen = () => {
             <div className="text-2xl text-center p-4">Token Details</div>
           </div>
 
-          <TokenDetails title="Name" value="Staking Token" />
-          <TokenDetails title="Symbol" value="STKN" />
+          <TokenDetails title="Name" value="C4EI ETH" />
+          <TokenDetails title="Symbol" value="EC4EI" />
           <TokenDetails title="Decimals" value="18" />
 
           <TokenDetails title="Total Supply" value={millify(10000000)} />
           <TokenDetails title="Maximum Supply" value={millify(10000000)} />
           <TokenDetails
             title="Token Address"
-            value="0x569eb2a0f04a7134788d7c02b6b804d9b1d82d09"
+            value="0xA535eb8C8E0DdeF9Bc19fbE3614c44211D8142d8"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ const TokenScreen = () => {
               {account.balance ? millify(account.balance, { precision: 6 }) : 0}{" "}
               ETH
             </div>
-            <div>STKN : {icoState.investorBalance} STKN</div>
+            <div>EC4EI : {icoState.investorBalance} EC4EI</div>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ const TokenScreen = () => {
               type="number"
               min={10}
               max={30000}
-              placeholder="No. of STKN Tokens..."
+              placeholder="No. of EC4EI Tokens..."
               value={userAmount}
               onChange={(e) => {
                 setUserAmount(e.target.value);
