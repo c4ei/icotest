@@ -16,9 +16,9 @@ const Navbar = () => {
       <Link to="/tokenDistribution" className="navbar-title">
         Token Distribution
       </Link>
-      <Link to="/faucet" className="navbar-title">
+      {/* <Link to="/faucet" className="navbar-title">
         Faucet
-      </Link>
+      </Link> */}
       <Link to="/faq" className="navbar-title">
         Faq
       </Link>

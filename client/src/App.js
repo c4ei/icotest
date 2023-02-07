@@ -113,7 +113,7 @@ function App() {
                     path="/tokenDistribution"
                     element={<TokenDistScreen />}
                   />
-                  <Route path="/faucet" element={<FaucetScreen />} />
+                  {/* <Route path="/faucet" element={<FaucetScreen />} /> */}
                   <Route path="/faq" element={<FaqScreen />} />
                   <Route path="/contact" element={<ContactScreen />} />
 
