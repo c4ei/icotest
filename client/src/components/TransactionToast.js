@@ -4,7 +4,7 @@ const TransactionToast = ({ userAmount, hash, text, text2 }) => {
   return (
     <div className="flex flex-col">
       <div>
-        Successfully {text} {userAmount} EC4EI Tokens {text2}
+        Successfully {text} {userAmount} SAWON Tokens {text2}
       </div>
       <a
         href={`https://goerli.etherscan.io/tx/${hash}`}

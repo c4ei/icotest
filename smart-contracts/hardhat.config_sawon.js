@@ -34,13 +34,13 @@ module.exports = {
       ,goerli: process.env.ETHERSCAN_GOERLI_API
     }
   },
-  // solidity: {
-  //   version: "0.8.16",
-  //   settings: {
-  //     optimizer: {
-  //       enabled: true,
-  //       runs: 200
-  //     }
-  //   }
-  // },
+  solidity: {
+    version: "0.6.12",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 999999
+      }
+    }
+  },
 };

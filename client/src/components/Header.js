@@ -19,7 +19,7 @@ const Header = () => {
           className="font-poppins font-bold text-[21px] hover:text-blue-400"
           onClick={() => navigate("/")}
         >
-          ICO App
+          ICO(Goerli)
         </div>
       </div>
       <div className="flex justify-center items-center text-center">

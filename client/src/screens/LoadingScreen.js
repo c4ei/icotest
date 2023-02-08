@@ -6,7 +6,7 @@ const LoadingScreen = () => {
     <div className="flex flex-col justify-center items-center h-[95vh]">
       <Grid color="#00BFFF" height={80} width={80} />
       <div className="text-[#00BFFF] mt-6 font-poppins font-bold text-2xl">
-        ICO App
+        ICO loading
       </div>
     </div>
   );

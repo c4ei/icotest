@@ -45,7 +45,7 @@ const TokenScreen = () => {
       );
       handleConnectWallet();
     } catch (error) {
-      handleError(error, "EC4EI");
+      handleError(error, "SAWON");
     }
   };
   return (
@@ -57,15 +57,15 @@ const TokenScreen = () => {
             <div className="text-2xl text-center p-4">Token Details</div>
           </div>
 
-          <TokenDetails title="Name" value="C4EI ETH" />
-          <TokenDetails title="Symbol" value="EC4EI" />
+          <TokenDetails title="Name" value="SAWON(GOERLI)" />
+          <TokenDetails title="Symbol" value="SAWON" />
           <TokenDetails title="Decimals" value="18" />
 
           <TokenDetails title="Total Supply" value={millify(10000000)} />
           <TokenDetails title="Maximum Supply" value={millify(10000000)} />
           <TokenDetails
             title="Token Address"
-            value="0xA535eb8C8E0DdeF9Bc19fbE3614c44211D8142d8"
+            value="0x76E0686469edE69af3E029A0FF3A3C41E56eF015"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ const TokenScreen = () => {
               {account.balance ? millify(account.balance, { precision: 6 }) : 0}{" "}
               ETH
             </div>
-            <div>EC4EI : {icoState.investorBalance} EC4EI</div>
+            <div>SAWON : {icoState.investorBalance} SAWON</div>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ const TokenScreen = () => {
               type="number"
               min={10}
               max={30000}
-              placeholder="No. of EC4EI Tokens..."
+              placeholder="No. of SAWON Tokens..."
               value={userAmount}
               onChange={(e) => {
                 setUserAmount(e.target.value);
